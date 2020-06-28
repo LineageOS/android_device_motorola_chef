@@ -136,6 +136,21 @@
                 </devicePort>
                 <devicePort tagName="FM tuner" type="AUDIO_DEVICE_IN_FM_TUNER" role="source">
                 </devicePort>
+                <devicePort tagName="BT A2DP Out" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP" role="sink"
+                            encodedFormats="AUDIO_FORMAT_SBC AUDIO_FORMAT_AAC AUDIO_FORMAT_APTX AUDIO_FORMAT_APTX_HD AUDIO_FORMAT_LDAC AUDIO_FORMAT_CELT AUDIO_FORMAT_APTX_ADAPTIVE">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                </devicePort>
+                <devicePort tagName="BT A2DP Headphones" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES" role="sink"
+                            encodedFormats="AUDIO_FORMAT_SBC AUDIO_FORMAT_AAC AUDIO_FORMAT_APTX AUDIO_FORMAT_APTX_HD AUDIO_FORMAT_LDAC AUDIO_FORMAT_CELT AUDIO_FORMAT_APTX_ADAPTIVE">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                </devicePort>
+                <devicePort tagName="BT A2DP Speaker" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER" role="sink"
+                            encodedFormats="AUDIO_FORMAT_SBC AUDIO_FORMAT_AAC AUDIO_FORMAT_APTX AUDIO_FORMAT_APTX_HD AUDIO_FORMAT_LDAC AUDIO_FORMAT_CELT AUDIO_FORMAT_APTX_ADAPTIVE">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                </devicePort>
             </devicePorts>
             <!-- route declaration, i.e. list all available sources for a given sink -->
             <routes>
@@ -168,6 +183,12 @@
                 <route type="mix" sink="fm input" sources="FM tuner"/>
                 <route type="mix" sink="voice_rx"
                        sources="Telephony Rx"/>
+                <route type="mix" sink="BT A2DP Out"
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload"/>
+                <route type="mix" sink="BT A2DP Headphones"
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload"/>
+                <route type="mix" sink="BT A2DP Speaker"
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload"/>
             </routes>
         </module>
 
@@ -200,9 +221,6 @@
 
         <!-- A2DP Input Audio HAL -->
         <xi:include href="a2dp_in_audio_policy_configuration.xml"/>
-
-        <!-- Bluetooth Audio HAL -->
-        <xi:include href="bluetooth_audio_policy_configuration.xml"/>
 
         <!-- Usb Audio HAL -->
         <xi:include href="usb_audio_policy_configuration.xml"/>
