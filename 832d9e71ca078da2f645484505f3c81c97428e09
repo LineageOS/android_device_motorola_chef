@@ -22,6 +22,30 @@
       "revId": "832d9e71ca078da2f645484505f3c81c97428e09",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "33c3e52e_257b5a7b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 23396
+      },
+      "writtenOn": "2020-06-30T16:41:03Z",
+      "side": 1,
+      "message": "Bruh max -_-",
+      "parentUuid": "099dbbdc_8d6c6e33",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 4
+      },
+      "revId": "832d9e71ca078da2f645484505f3c81c97428e09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
