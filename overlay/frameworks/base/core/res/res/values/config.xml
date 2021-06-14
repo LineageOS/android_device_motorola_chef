@@ -47,4 +47,7 @@
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">false</bool>
 
+    <!-- Specify if the fingerprint hardware support gestures-->
+    <bool name="config_fingerprintSupportsGestures">true</bool>
+
 </resources>
