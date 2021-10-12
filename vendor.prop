@@ -27,6 +27,9 @@ ro.hardware.vulkan=sdm660
 # FM
 ro.vendor.fm.use_audio_session=true
 
+# Notch
+ro.support_hide_display_cutout=true
+
 # Sensors
 ro.hardware.sensors=chef_sprout
 ro.vendor.sensors.maghalcal=true
