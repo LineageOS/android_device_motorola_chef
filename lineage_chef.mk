@@ -56,13 +56,12 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 PRODUCT_DEVICE := chef
 PRODUCT_NAME := lineage_chef
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Motorola One Power
-PRODUCT_MANUFACTURER := Motorola
+PRODUCT_MODEL := motorola one power
+PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=chef
-
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="chef_sprout-user 10 QPTS30.61-18-12 65302 release-keys"
+    PRODUCT_NAME=chef \
+    PRIVATE_BUILD_DESC="chef_sprout-user 10 QPTS30.61-18-16-16 c8402 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := motorola/chef_retail/chef_sprout:10/QPTS30.61-18-12/65302:user/release-keys
+BUILD_FINGERPRINT := motorola/chef_retail/chef_sprout:10/QPTS30.61-18-16-16/c8402:user/release-keys
