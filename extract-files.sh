@@ -15,7 +15,7 @@ fi
 set -e
 
 export DEVICE=chef
-export DEVICE_COMMON=sdm660-common
+export DEVICE_COMMON=msm8998-common
 export VENDOR=motorola
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
