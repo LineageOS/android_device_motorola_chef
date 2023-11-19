@@ -59,7 +59,6 @@ endif
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.chef.rc
 
 # Sensors
