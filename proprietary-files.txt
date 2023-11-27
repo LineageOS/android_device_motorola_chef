@@ -1,11 +1,16 @@
-# Audio ACDB
-vendor/etc/acdbdata/Bluetooth_cal.acdb|de32f236e41af911ffaa7a52018eb5e1556936c1
+## All proprietary files from this list, unless pinned and noted otherwise,
+## are from chef_sprout (QPTS30.61-18-12).
+
+# Audio - ACDB
 vendor/etc/acdbdata/General_cal.acdb
 vendor/etc/acdbdata/Global_cal.acdb
-vendor/etc/acdbdata/Handset_cal.acdb|87df3deddcf8a044b1dbc30544739a1ff1609cad
 vendor/etc/acdbdata/Hdmi_cal.acdb
-vendor/etc/acdbdata/Headset_cal.acdb|e80ccc45897a0886ca25d3562c09efd052d44381
 vendor/etc/acdbdata/Speaker_cal.acdb
+
+# Audio - ACDB - from lake_retail (QPWS30.61-21-11)
+vendor/etc/acdbdata/Bluetooth_cal.acdb|de32f236e41af911ffaa7a52018eb5e1556936c1
+vendor/etc/acdbdata/Handset_cal.acdb|87df3deddcf8a044b1dbc30544739a1ff1609cad
+vendor/etc/acdbdata/Headset_cal.acdb|e80ccc45897a0886ca25d3562c09efd052d44381
 
 # Camera
 vendor/etc/camera/bokeh_preview.cfg
@@ -122,6 +127,19 @@ vendor/lib/libchromatix_ov5675_qtech_snapshot.so
 vendor/lib/libchromatix_ov5675_qtech_video_full.so
 vendor/lib/libchromatix_ov5675_qtech_zsl_preview.so
 vendor/lib/libchromatix_ov5675_qtech_zsl_video.so
+
+# Camera - Firmware
+vendor/firmware/cpp_firmware_v1_10_0.fw
+vendor/firmware/cpp_firmware_v1_12_0.fw
+vendor/firmware/cpp_firmware_v1_1_1.fw
+vendor/firmware/cpp_firmware_v1_1_6.fw
+vendor/firmware/cpp_firmware_v1_2_0.fw
+vendor/firmware/cpp_firmware_v1_4_0.fw
+vendor/firmware/cpp_firmware_v1_5_0.fw
+vendor/firmware/cpp_firmware_v1_5_1.fw
+vendor/firmware/cpp_firmware_v1_5_2.fw
+vendor/firmware/cpp_firmware_v1_6_0.fw
+vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera - mmcamera
 vendor/lib/libmmcamera2_c2d_module.so
@@ -242,20 +260,7 @@ vendor/lib/libdualcameraddm.so
 vendor/lib/libmm-qcamera.so
 vendor/lib64/libdualcameraddm.so
 
-# Camera - Firmware
-vendor/firmware/cpp_firmware_v1_10_0.fw
-vendor/firmware/cpp_firmware_v1_12_0.fw
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_5_1.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_8_0.fw
-
-# Display calib
+# Display Calibrations
 vendor/etc/qdcm_calib_data_mipi_mot_vid_csot_nt_fhd_618.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_nt_fhd_618.xml
 
@@ -306,6 +311,6 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 
-# Sensors - from motorola/lake_retail/lake:10/QPWS30.61-21-18-7/fac4a:user/release-keys
+# Sensors - from lake_retail (QPWS30.61-21-18-7-21)
 vendor/lib/sensors.ssc.so|8d311851599fd687fff7ba3a13faecd87a04b4e7
 vendor/lib64/sensors.ssc.so|d3471c08181b097b92d35683d260e38358d7a13a
