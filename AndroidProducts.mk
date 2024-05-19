@@ -16,9 +16,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_chef.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_chef-user \
-    lineage_chef-userdebug \
-    lineage_chef-eng
-
