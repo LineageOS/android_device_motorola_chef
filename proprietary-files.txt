@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from chef_sprout (QPTS30.61-18-12).
+## are from chef_sprout (QPTS30.61-18-16-19).
 
 # Audio - ACDB
 vendor/etc/acdbdata/General_cal.acdb
