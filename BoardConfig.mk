@@ -38,9 +38,6 @@ TARGET_OTA_ASSERT_DEVICE := chef
 # Display
 TARGET_SCREEN_DENSITY := 420
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/chef_manifest.xml
-
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/c0c4000.sdhci
 TARGET_KERNEL_CONFIG := lineageos_chef_defconfig
